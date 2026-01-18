@@ -10,7 +10,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product" element={<Product />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </div>
