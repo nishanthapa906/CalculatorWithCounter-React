@@ -31,7 +31,7 @@ const counterReducer = (state, action) => {
     case "5minus":
       return { ...state, countItems: state.countItems - 5 };
 
-    // --- CALCULATOR CASES ---
+   
     
     case "change":
     case "plus":
@@ -41,7 +41,7 @@ const counterReducer = (state, action) => {
       return { ...state, countItems: state.countItems - action.payload };
 
     case "multiply":
-      // If current total is 0, start with the payload number instead of 0 * num
+     
       return { 
         ...state, 
         countItems: state.countItems === 0 ? action.payload : state.countItems * action.payload 
